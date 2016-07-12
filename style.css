@@ -1,0 +1,477 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Content */
+
+.header {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header > div {
+    margin-top: 30px;
+}
+
+.image {
+    text-align: right;
+}
+
+.image > img {
+    width: 70%;
+    z-index: 0;
+
+    -webkit-transition: width       1s;
+    -moz-transition: width       1s;
+    -o-transition: width       1s;
+    transition: width       1s;
+
+    -webkit-transition: margin-left       1s;
+    -moz-transition: margin-left       1s;
+    -o-transition: margin-left       1s;
+    transition: margin-left       1s;
+
+    -webkit-transition: margin-right       1s;
+    -moz-transition: margin-right       1s;
+    -o-transition: margin-right       1s;
+    transition: margin-right       1s;
+}
+
+.phototext {
+    position: absolute;
+    top: 220px;
+    left: 10%;
+    width: 400px;
+    height: 200px;
+    z-index: 1;
+    color: black;
+
+    -webkit-transition: width         1s;
+    -moz-transition: width         1s;
+    -o-transition: width         1s;
+    transition: width         1s;
+
+    -webkit-transition: top         1s;
+    -moz-transition: top         1s;
+    -o-transition: top         1s;
+    transition: top         1s;
+}
+
+.phototext > p,h1 {
+    font-family: "Open Sans", sans-serif;
+    word-wrap: break-word;
+}
+
+.phototext > h1 {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.phototext > p {
+    font-size: 37px;
+}
+
+.phototext > .nav{
+    display: none;
+}
+
+.fix-header > .nav > a{
+    border-left: 1px solid #9b9b9b;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    float: left;
+    width: 110px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+.fix-header > .nav > a:hover{
+    background-color: #aeaeae;
+    font-weight: 400;
+}
+
+.fix-header > .nav > a:last-of-type{
+    border-right: 1px solid #9b9b9b;
+}
+
+.fix-header > .nav > .navbtn > .btn-default{
+    color: #555555;
+
+}
+
+.fix-header > .nav > .navbtn{
+    display: none;
+    line-height: 43px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fix-header > h1{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    float: left;
+    vertical-align: top;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.fix-header > .nav{
+    width: auto;
+    font-size: 21px;
+    display: inline-block;
+    float: right;
+    margin-right: 9%;
+    height: auto;
+}
+
+
+@media all and (max-width: 960px) {
+
+    .fix-header > .nav > .navbtn{
+        display: inherit;
+    }
+
+    .fix-header > .nav > .navbtn > button{
+       margin-bottom: 5px;
+    }
+
+    .fix-header > .nav{
+        margin-right: 0px;
+    }
+
+    .fix-header > .nav > a{
+        display: none;
+    }
+
+    .header {
+        margin-top: 0px;
+    }
+
+    .phototext {
+        position: static;
+        width: 100%;
+        height: auto;
+        top: 0px;
+        margin: 0px;
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+
+    .phototext > p,h1{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .phototext > h1 {
+        margin-bottom: 0px;
+        width: 80%;
+    }
+
+    .phototext > p {
+        margin-top: 0px;
+    }
+
+    .image > img {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        z-index: 0;
+    }
+
+    .fix-header > h1{
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 520px) {
+
+    .phototext > h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .fix-header > h1{
+        font-size: 21px;
+    }
+
+    .phototext > p {
+        font-size: 21px;
+    }
+}
+
+.fix-header{
+    background-color: #CCCCCC !important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0.96;
+    margin-top: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: auto;
+    padding-left: 9%;
+}
+
+.fix-header > p{
+    display: none;
+}
+
+/* Drive */
+
+#drive > div > p{
+    text-align: center;
+    font-size: 150%;
+    line-height: 165%;
+}
+
+/*Recommendation */
+
+.recommendation{
+   height: 420px;
+}
+
+@media all and (max-width: 992px) {
+    .recommendation {
+        height: auto;
+    }
+}
+
+/* Info */
+
+.info {
+    margin-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media all and (max-width: 960px) {
+    .info {
+        margin-top: 30px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+.info > div > p {
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/* Education */
+
+.edu-box{
+    margin-bottom: 20px;
+}
+
+.edu-image{
+    width: 90px;
+    position: absolute;
+}
+
+.edu-header{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+.edu-footer{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 100px;
+    color:grey
+}
+
+.edu-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+
+}
+
+/* Experience */
+
+.exp-icon{
+   font-size: 3em !important;
+}
+
+.exp-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center !important;
+    margin-top: 7px;
+}
+
+.exp-row{
+    margin-bottom: 40px;
+}
+
+/* Languages */
+
+.lang-header{
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.lang-footer{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+/* Word Cloud */
+
+.wordcloud-box{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wordcloud{
+    width: 80%;
+}
+
+@media all and (max-width: 520px) {
+    .wordcloud{
+        width: 90%;
+    }
+}
+
+/* Contact */
+
+h2 {
+    text-transform: uppercase;
+    color: #666;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contact > div {
+    background: url(images/Contact_us.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 248px;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.contact_strip {
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 47px;
+    height: 100px;
+    z-index: 10;
+}
+
+.contact-header,.contact-text {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-header:hover, .contact-header:visited, .contact-header:link, .contact-header:active,
+.contact-text:hover, .contact-text:visited, .contact-text:link, .contact-text:active
+{
+    text-decoration: none !important;
+}
+
+.contact-header {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.contact-text  {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.contact_overlay {
+    background-color: #000;
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.circle {
+    margin: 0 auto;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+#circle_bg1 {
+    background: url(images/cont_name.png) no-repeat center;
+}
+
+#circle_bg2 {
+    background: url(images/cont_add.png) no-repeat center;
+}
+
+#circle_bg3 {
+    background: url(images/cont_mail.png) no-repeat center;
+}
+
+@media all and (max-width: 768px) {
+    .circle{
+       display: none;
+    }
+
+    .contact_strip {
+        padding-top: 25px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .contact_strip{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.backgroundtransition{
+    -webkit-transition: background-color 1s !important;
+    -moz-transition: background-color 1s !important;
+    -o-transition: background-color 1s !important;
+    transition: background-color 1s !important;
+}
+
+.backgroundtransition > p{
+    -webkit-transition: display 1s !important;
+    -moz-transition: display 1s !important;
+    -o-transition: display 1s !important;
+    transition: display 1s !important;
+}
